@@ -1,5 +1,5 @@
-site_name: "UCS503 : Software Engineering : Project Template"
-site_url: https://tiet-ucs503.github.io/ucs503p-202627odd-template
+site_name: "CampusPool | UCS503 Software Engineering"
+site_url: https://pihuuaneja.github.io/ucs503p-202627campuspool/
 
 plugins:
 - search
@@ -46,14 +46,14 @@ theme:
   logo: assets/tiet-logo.svg
   favicon: assets/favicon.png
 
-repo_url: https://github.com/tiet-ucs503/ucs503p-202627odd-template
-repo_name: ucs503p-202627odd-template
+repo_url: https://github.com/pihuuaneja/ucs503p-202627campuspool
+repo_name: ucs503p-202627campuspool
 copyright: "Copyright &copy; 2025 <a href='https://bvraghav.com/'>Raghav B. Venkataramaiyer</a> &lt;<code style='color:inherit; background:transparent'>bv.raghav</code>&gt;"
 extra:
   social:
   - icon: fontawesome/brands/github
-    link: https://github.com/tiet-ucs503/ucs503p-202627odd-template
-    name: Git Repo for UCS503P Project Template
+    link: https://github.com/pihuuaneja/ucs503p-202627campuspool
+    name: CampusPool on GitHub
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -61,7 +61,6 @@ extra_css:
 
 extra_javascript:
 - https://unpkg.com/katex@0/dist/katex.min.js
-- javascript/arithmatex.js
 
 markdown_extensions:
   - abbr

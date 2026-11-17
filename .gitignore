@@ -465,4 +465,16 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
- 
+
+# CampusPool local configuration and uploads
+.env
+.env.*
+!.env.example
+*.pem
+code/backend/.env
+code/backend/uploads/*
+!code/backend/uploads/.gitkeep
+
+# CampusPool development uploads and encryption keys
+/code/backend/uploads/**
+!/code/backend/uploads/.gitkeep

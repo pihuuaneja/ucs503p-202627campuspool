@@ -1,45 +1,17 @@
-# UCS503P Project Template
+# CampusPool
 
-This is a project template for UCS503P Project (2026-27
-ODD). 
+CampusPool is a UCS503 Software Engineering project at TIET. It helps members of the Thapar community coordinate shared rides and find company for campus activities. Sign-in uses a one-time code sent to a Thapar email address.
 
-There are 3 reports in LaTeX format, namely *a*)
-Project Proposal, *b*) Project Report Prototype Stage,
-and *c*) Project Report Final -- each in their
-respective folders.
+- **Rides** — Post a trip, request a seat, approve riders, and record each rider's share of the actual fare.
+- **Activities** — Find company for study, sports, meals, and other outings.
+- **Chat** — Students connected by a ride or activity request can coordinate through end-to-end encrypted chat.
 
-Journals are stacked under the folder `journals`, one
-folder for each team member.  A sample entry has been
-made for example.
+The app uses Next.js and TypeScript for the frontend, FastAPI for the API, and PostgreSQL for persistence.
 
-The source code is contained within the folder `code`.
+## Project files
 
-The documentation is under folder `docs`.
-
-All other aspects of code organisation are left to the
-discretion of the user(s).
-
-
-## Docs
-
-As of now, the `docs` is just an organised collection
-of markdown (`md`) files.  But the build procedure is
-using [`mkdocs`](https://google.com/search?q=mkdocs)
-backend.  As a result, any commit into the `master`
-branch of github repository would result in CI/CD based
-build and deployment of the documentation including the
-journals.
-
-For a local DEV-version of the docs for viewing and
-testing, install the local env and issue the following
-command:
-
-``` shell
-make docs
-```
-
-### Local `env` for `docs`
-
-``` shell
-
-```
+- [App setup and usage](code/README.md)
+- [Render deployment guide](code/DEPLOY_FREE.md)
+- [Journal examples](journals/)
+- [Project proposal](project-proposal/), [prototype report](project-report-prototype-stage/), and [final report](project-report-final/) templates
+- [UCS503 semester project guidelines](https://tiet-ucs503.github.io/semester-project/)

@@ -1,40 +1,17 @@
-﻿![Tiet Logo](assets/tiet-logo.svg){ .tiet-logo }
+# CampusPool
 
-**UCS503: Software Engineering (Project)**  
-**TIET Patiala**
+CampusPool helps members of the Thapar community coordinate shared rides and find company for campus activities. This is a UCS503 Software Engineering project at TIET.
 
-# The Sum Function in C++
+## How it works
 
-**Author(s)**:
+1. Sign in with a one-time code sent to a Thapar email address.
+2. Post a ride or activity, or request to join an existing one.
+3. Once connected, use chat to coordinate. For completed rides, the app records each rider's share of the actual fare and lets the ride creator confirm payment.
 
-`(RGB)` Raghav B. Venkataramaiyer `<bv.raghav -at-
-thapar -dot- edu>`
+## Implementation
 
-This project creates a sum function in c++ as a sample
-to illustrate how to compile a shared library and
-distribute it for use along with the binary.
+The Next.js frontend calls a FastAPI backend backed by PostgreSQL. WebSockets deliver live updates, and the browser encrypts one-to-one chat messages before sending them.
 
-## Installation
-
-``` shell
-make -C code
-```
-
-This will create create a folder `dist` in `code`
-folder, with following contents
-
-```
-dist
- +-lib
- |  \-libbvr_math.so
- +-bin
-    \-run
-```
-
-## Usage
-
-``` shell
-cd code
-export LD_LIBRARY_PATH=dist/lib
-./dist/bin/run
-```
+- [Source code and local setup](https://github.com/pihuuaneja/ucs503p-202627campuspool/tree/master/code)
+- [Render deployment guide](https://github.com/pihuuaneja/ucs503p-202627campuspool/blob/master/code/DEPLOY_FREE.md)
+- [Project repository and course deliverables](https://github.com/pihuuaneja/ucs503p-202627campuspool)

@@ -1,0 +1,44 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries CampusPool\par}
+\vspace{4pt}
+{\large Prototype Stage Progress Report\par}
+\vspace{4pt}
+UCS503P Software Engineering, TIET Patiala\\
+Academic year 2026--27 \quad Review draft\\[4pt]
+Pihu (1024031014) \quad Jayant (1024031016) \quad Aashna (1024031018)
+\end{center}
+
+\section{Prototype objective}
+The prototype exercises the minimum workflow for coordinating a shared campus ride. A requester needs to find a suitable trip and receive a clear decision. An organiser needs to control which requests are accepted and how many seats remain available.
+
+\section{Workflow and acceptance checks}
+\begin{enumerate}
+\item Sign in with two test Thapar accounts. Confirm that the authentication flow requires a valid one-time code.
+\item As the organiser, publish a ride with a pickup point, destination, departure time and available seats.
+\item As the requester, find the ride and submit a seat request. Confirm that its status appears as pending.
+\item As the organiser, accept or decline the request. Confirm that the requester can see the decision and that an accepted request consumes an available seat.
+\item Repeat with the final seat and a second requester to check capacity. Try deciding a request from an account that does not organise the ride to check authorisation.
+\end{enumerate}
+
+\section{Implementation evidence}
+The current repository contains the Next.js ride list, ride form and ride detail screens, a FastAPI rides router, SQLAlchemy models, database migrations and backend API tests. These files support the workflow described here. The archived prototype build and its demo recording are still pending, so this report describes the prototype scope using the current repository snapshot.
+
+\section{Validation record}
+The repository includes tests for email eligibility, OTP handling, ride workflows and fare splitting. The test suite and a live browser demo were not rerun for this report. For the demo, capture the published ride, the pending request and the resulting decision from each account. Record the build commit, test command and observed output.
+
+\section{Improvement plan}
+\begin{itemize}
+\item Add activity listings and reuse the discover--request--decide workflow without fare tracking.
+\item Add notifications and secure chat so confirmed participants can coordinate details.
+\item Record actual fare shares after completion and require the organiser to confirm each rider's payment status.
+\item Run the paired ride-request pilot defined in the proposal. Time each trial, record failures and review where participants stalled.
+\end{itemize}
+
+\end{document}

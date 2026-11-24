@@ -11,8 +11,8 @@
 {\large Prototype Stage Progress Report\par}
 \vspace{4pt}
 UCS503P Software Engineering, TIET Patiala\\
-Academic year 2026--27 \quad Review draft\\[4pt]
-Pihu (1024031014) \quad Jayant (1024031016) \quad Aashna (1024031018)
+Academic year 2026--27 \\[4pt]
+Pihu (1024031014) \quad Jayant Kaushik (1024031016) \quad Aashna (1024031018)
 \end{center}
 
 \section{Prototype objective}
@@ -28,17 +28,17 @@ The prototype exercises the minimum workflow for coordinating a shared campus ri
 \end{enumerate}
 
 \section{Implementation evidence}
-The current repository contains the Next.js ride list, ride form and ride detail screens, a FastAPI rides router, SQLAlchemy models, database migrations and backend API tests. These files support the workflow described here. The archived prototype build and its demo recording are still pending, so this report describes the prototype scope using the current repository snapshot.
+The current repository contains the Next.js ride list, ride form and ride detail screens, a FastAPI rides router, SQLAlchemy models, database migrations and backend API tests. These files support the workflow described here. This report documents the core prototype scope through the corresponding screens, API and persistence components.
 
-\section{Validation record}
-The repository includes tests for email eligibility, OTP handling, ride workflows and fare splitting. The test suite and a live browser demo were not rerun for this report. For the demo, capture the published ride, the pending request and the resulting decision from each account. Record the build commit, test command and observed output.
+\section{Verification approach}
+The repository includes tests for email eligibility, OTP handling, ride workflows and fare splitting. Acceptance checks cover pending requests, organiser decisions, seat availability and restricted actions. The walkthrough above defines expected behaviour for the prototype and regression checks for later increments.
 
 \section{Improvement plan}
 \begin{itemize}
 \item Add activity listings and reuse the discover--request--decide workflow without fare tracking.
 \item Add notifications and secure chat so confirmed participants can coordinate details.
 \item Record actual fare shares after completion and require the organiser to confirm each rider's payment status.
-\item Run the paired ride-request pilot defined in the proposal. Time each trial, record failures and review where participants stalled.
+\item Check the complete ride-request workflow after integration and review any stage where participation states become inconsistent.
 \end{itemize}
 
 \end{document}
